@@ -1,0 +1,19 @@
+- name: PHP Insights
+  # You may pin to the exact commit or the version.
+  # uses: Novusvetus/action-phpinsights@710e415951f9ad56f1302b4979eecc49c9f18b26
+  uses: Novusvetus/action-phpinsights@1.1.13
+  with:
+    # Files to check
+    files: # optional, default is **.php
+    # Scan all files and not only changed
+    scan_all: # optional
+    # Path to PHP Insights executable
+    phpinsights_path: # optional, default is php ~/.composer/vendor/bin/phpinsights
+    # Min quality needed.
+    min_quality: # optional, default is 90
+    # Min complexity needed.
+    min_complexity: # optional, default is 90
+    # Min architecture needed.
+    min_architecture: # optional, default is 90
+    # Min style needed.
+    min_style: # optional, default is 90
